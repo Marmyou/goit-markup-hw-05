@@ -56,12 +56,24 @@
       </div>
     </header>
     <main>
+      <!-- Модальное окно -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="icon-cross">
+              <use href="./images/sprite.svg#icon-form-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <!-- Секция героя -->
       <section class="hero flex">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <!-- Временно оформлена как ссылка -->
-          <button class="hero-button" href="">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Секция преимуществ -->
@@ -425,5 +437,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
