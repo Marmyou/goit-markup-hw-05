@@ -264,8 +264,8 @@ p {
 .icon-cross {
   position: absolute;
   top: 50%;
-  right: 15%;
-  transform: translate(-50%, -7px);
+  left: 50%;
+  transform: translate(-50%, -50%);
   fill: #000000;
   width: 11px;
   height: 11px;
