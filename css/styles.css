@@ -232,15 +232,21 @@ p {
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
 
   min-width: 528px;
   min-height: 581px;
   background-color: var(--primary-background-color);
+
+  transition: transform 250ms var(--animation-timing);
 }
 
 .modal-close-btn {
@@ -259,7 +265,7 @@ p {
   position: absolute;
   top: 50%;
   right: 15%;
-  transform: translate(-50%, -6px);
+  transform: translate(-50%, -7px);
   fill: #000000;
   width: 11px;
   height: 11px;
